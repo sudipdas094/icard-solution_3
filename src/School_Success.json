@@ -1,0 +1,34 @@
+{
+    "school_id": "cqwwu3k81k",
+    "school_name": "Thangapara High school",
+    "school_email": "sudipdas.094@gmail.com",
+    "school_address": "140 ,church street",
+    "school_city": "Parramatta",
+    "school_state": "Karnataka",
+    "school_pincode": "560067",
+    "school_adminEmail": "sudipdas.094@gmail.com",
+    "school_registration_date": "2023-07-26T09:59:07.529Z",
+    "icard_template": "template_1",
+    "school_status": "SUBMITTED",
+    "phones": {
+        "mobile_number": "478591418",
+        "fax": "77990099"
+    },
+    "principal": {
+        "name": "Sukanta Paul",
+        "email": "sudipdas.094@gmail.com",
+        "years_exp": null,
+        "salutation": "Mrs.",
+        "phones": {
+            "mobile_number": "478591418",
+            "fax": "77990099"
+        }
+    },
+    "schoolFiles": {
+        "image1_id": "cqwwu3k81k_1_1690365582974",
+        "image2_id": "cqwwu3k81k_2_1690365591921",
+        "image1_location": "/Users/sudip_das/Documents/RVSS_SFTP_FOLDER/cqwwu3k81k_1_1690365582974.jpg",
+        "image2_location": "/Users/sudip_das/Documents/RVSS_SFTP_FOLDER/cqwwu3k81k_2_1690365591921.png"
+    },
+    "id": "64c0eeb516716e2354f65346"
+}
