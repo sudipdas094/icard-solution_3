@@ -13,13 +13,11 @@ import {
 import School from './School';
 
 
-const AdminLteSchoolSuccessForm = () => {
- 
-   const params = useParams();
-   const school_id = params.school_id;
-   //const school = new School(params.school);
-   const values = Object.keys(params)
-   alert("Data Passed "+values);
+const AdminLteSchoolSuccessForm = () => { 
+   const {jsonData} = useParams();
+   const formData = JSON.parse(decodeURIComponent(jsonData));
+   //const values = Object.keys(params)
+   
    
 
    const handleSubmit = (e) => { e.preventDefault()}
@@ -228,10 +226,10 @@ const AdminLteSchoolSuccessForm = () => {
           </div>
           <form onSubmit={handleSubmit}>
           <div className="form-group" color="#GEGEGE">
-          <label htmlFor="inputName">School Id  {}  </label>
+          <label htmlFor="inputName">School Id  is  {formData.school_id}  </label>
             </div>
             <div className="form-group">
-              <label htmlFor="inputName">School Name is </label>
+              <label htmlFor="inputName">School Name is  {formData.school_name} </label>
               
               <script>
                  //alert("school name");
@@ -263,7 +261,7 @@ const AdminLteSchoolSuccessForm = () => {
               <label htmlFor="inputName">School Phone Number 1</label>
               <div class="input-group-prepend">
                        <span class="input-group-text"><i class="fas fa-phone"></i></span>
-                        
+                       <label htmlFor="inputName">{formData.phones.mobile_number}</label>
               </div>
               
        </div>
@@ -271,7 +269,7 @@ const AdminLteSchoolSuccessForm = () => {
               <label htmlFor="inputName">School Phone Number 2</label>
               <div class="input-group-prepend">
               <span class="input-group-text"><i class="fas fa-phone"></i></span>
-              
+              <label htmlFor="inputName">{formData.phones.fax}</label>
               </div>
         </div>
     </div>
@@ -282,6 +280,7 @@ const AdminLteSchoolSuccessForm = () => {
               <label htmlFor="inputEmail">School Admin Email</label>
               <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                    <label htmlFor="inputName">{formData.phones.fax}</label>
               </div>
               
             </div>

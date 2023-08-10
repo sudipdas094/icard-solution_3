@@ -149,8 +149,9 @@ const AdminLteSchoolForm = (props)  =>{
          }
        })
          .then(response => {
-            const school = new School(response.data);
-           navigate(`./schoolSuccess/${school._school_id}`);
+            //const school = new School(response.data);
+            //alert("Data "+JSON.stringify(response.data));
+            navigate(`./schoolSuccess/${encodeURIComponent(JSON.stringify(response.data))}`);
           
        }).then((school_response) => {
          //var returnObject = JSON.stringify(response.data);
