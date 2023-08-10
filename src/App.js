@@ -17,7 +17,7 @@ const App = () => {
       <Routes>
         <Route exact path="/school" element={<AdminLteSchoolForm />}  />
         <Route path="/student" element={<AdminLteStudentForm />} />
-        <Route path="school/schoolSuccess/:school_id" element={(<AdminLteSchoolSuccessForm />)}/>
+        <Route path="school/schoolSuccess/:jsonData" element={(<AdminLteSchoolSuccessForm />)}/>
       </Routes>
     </Router>
     
